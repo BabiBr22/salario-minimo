@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> PinkTicket! </title>
+</head>
+
+<body>
+    <div>
+        <h1 class="titulo"> Cadastro de Eventos </h1>
+
+        <div class="container">
+            <form id="event-form">
+                <input type="text" id="title" placeholder="Nome" required>
+                <textarea id="description" placeholder="Descrição" required></textarea>
+                <input type="text" id="location" placeholder="Local" required>
+                <input type="number" id="preco" placeholder="Preço" required>
+                <input type="url" id="imageUrl" placeholder="URL da Imagem" aria-label="Insira a URL da imagem">
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
+
+        <div>
+            <h2>Eventos Cadastrados</h2>
+            <ul id="events-list" role="list"></ul>
+
+            <div class="event-details" id="event-details" style="display: none;" aria-labelledby="event-details">
+                <h3 id="event-details-title">Detalhes do Evento</h3>
+                <p><strong>Título:</strong> <span id="detail-title"></span></p>
+                <p><strong>Descrição:</strong> <span id="detail-description"></span></p>
+                <p><strong>Localização:</strong> <span id="detail-location"></span></p>
+                <p><strong>Preço:</strong> <span id="detail-preco"></span></p>
+                <div id="detail-image-container" style="margin-top: 10px;">
+                    <img id="detail-image" alt="Imagem do Evento" style="max-width: 100%; display: none;">
+                </div>
+            </div>
+            <ul id="events-list"></ul>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

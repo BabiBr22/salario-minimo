@@ -1,0 +1,88 @@
+body{
+    background-color: #DDA0DD;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    margin: 40px;
+
+}
+
+.container{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+    border-radius: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input, textarea{
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%; /* Largura total da div */
+    max-width: 300px; /* Largura máxima dos campos */
+    border: 1px solid #ccc;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    align-items: center;
+}
+
+button {
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    background-color: #DDA0DD;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    margin: 10px;
+
+}
+
+button:hover {
+    background-color: #dda0dda6; /* Tom de azul mais escuro ao passar o mouse */
+}
+
+#events-list {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 0; /* Remove margens para a esquerda */
+}
+
+#events-list li {
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    cursor: pointer; /* Indica que o item é clicável */
+}
+
+.event-details {
+    background-color: #f8f9fa; /* Fundo claro */
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    border-radius: 4px;
+}
